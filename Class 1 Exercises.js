@@ -68,6 +68,12 @@ console.log(addressBlock)
 // 
 // Write code that is able to extract the first name from this string into a variable.
 // Hint: use indexOf, slice, and / or substring
+var givenString = `Reetika Chauhan
+35828 51st Ave S
+Auburn, Washington 98001`
+var indexofFirstSpace = givenString.indexOf(' ')
+var firstNameextracted = givenString.substring(0,indexofFirstSpace)
+console.log('Extracted First Name is: ', firstNameextracted)
 
 
 /**
@@ -79,4 +85,13 @@ console.log(addressBlock)
 // Look online for documentation on Date objects.
 
 // Starting hint:
-const endDate = new Date(2019, 3, 1);
+//const endDate = new Date(2019, 3, 1);
+var startingdate = '1/1/2020 00:00:00'
+var endingdate = '4/1/2020 00:00:00'
+const startDate = new Date( startingdate)
+const endDate = new Date( endingdate)
+startdate_in_seconds = startDate.getTime()
+enddate_in_seconds = endDate.getTime()
+middate_in_seconds = (enddate_in_seconds + startdate_in_seconds)/2
+const midDate = new Date(middate_in_seconds)
+console.log('Middle Date: ', midDate)
