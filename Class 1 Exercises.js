@@ -5,13 +5,13 @@
 // 1. Pagliacci charges $16.99 for a 13” pizza and $19.99 for a 17” pizza.
 // What is the area for each of these pizzas?
 // (radius would be the listed size - i.e. 13" - divided by 2)
-var pizza_diameter1 = 13
-var pizza_diameter2 = 17
-var pizza_cost1 = 16.99
-var pizza_cost2 = 19.99
-var area1 = 3.1415 * (13/2)
+let pizza_diameter1 = 13
+let pizza_diameter2 = 17
+let pizza_cost1 = 16.99
+let pizza_cost2 = 19.99
+let area1 = 3.1415 * ((13/2) ** 2 )
 console.log('Area of first pizza: ', area1)
-var area2 = 3.1415 * (17/2)
+let area2 = 3.1415 * ((17/2) ** 2 )
 console.log('Area of second pizza: ', area2)
 
 
@@ -24,17 +24,17 @@ console.log('Cost per square inch of second pizza: ', costpersquareinch2)
 // 3. Using the Math object, put together a code snippet
 // that allows you to draw a random card with a value
 // between 1 and 13 (assume ace is 1, jack is 11…)
-var maxvalueofcard = 13
-var minvalueofcard = 1
-var random_Card = Math.floor(Math.random()*(((maxvalueofcard)-minvalueofcard)+1) + minvalueofcard)
+let maxvalueofcard = 13
+let minvalueofcard = 1
+let random_Card = Math.floor(Math.random()*(((maxvalueofcard)-minvalueofcard)+1) + minvalueofcard)
 console.log("Random Card is: ",random_Card)
 
 // 4. Draw 3 cards and use Math to determine the highest
 // card
-var card1 = Math.floor(Math.random()*(((maxvalueofcard)-minvalueofcard)+1) + minvalueofcard)
-var card2 = Math.floor(Math.random()*(((maxvalueofcard)-minvalueofcard)+1) + minvalueofcard)
-var card3 = Math.floor(Math.random()*(((maxvalueofcard)-minvalueofcard)+1) + minvalueofcard)
-var highest_Card = Math.max(card1,card2,card3)
+let card1 = Math.floor(Math.random()*(((maxvalueofcard)-minvalueofcard)+1) + minvalueofcard)
+let card2 = Math.floor(Math.random()*(((maxvalueofcard)-minvalueofcard)+1) + minvalueofcard)
+let card3 = Math.floor(Math.random()*(((maxvalueofcard)-minvalueofcard)+1) + minvalueofcard)
+let highest_Card = Math.max(card1,card2,card3)
 console.log('First Card: ', card1)
 console.log('Second Card: ', card2)
 console.log('Third Card: ', card3)
@@ -49,13 +49,13 @@ console.log('Highest Card: ', highest_Card)
 // streetAddress, city, state, and zipCode. Use
 // this information to create a formatted address block
 // that could be printed onto an envelope.
-var firstName = 'Reetika'
-var lastName = 'Chauhan'
-var streetAddress = '35828 51st Ave S' 
-var city = 'Auburn'
-var state = 'Washington'
-var zipcode = '98001'
-var addressBlock = `${firstName} ${lastName}
+let firstName = 'Reetika'
+let lastName = 'Chauhan'
+let streetAddress = '35828 51st Ave S' 
+let city = 'Auburn'
+let state = 'Washington'
+let zipcode = '98001'
+let addressBlock = `${firstName} ${lastName}
 ${streetAddress}
 ${city}, ${state} ${zipcode}`
 console.log(addressBlock)
@@ -68,11 +68,11 @@ console.log(addressBlock)
 // 
 // Write code that is able to extract the first name from this string into a variable.
 // Hint: use indexOf, slice, and / or substring
-var givenString = `Reetika Chauhan
+let givenString = `Reetika Chauhan
 35828 51st Ave S
 Auburn, Washington 98001`
-var indexofFirstSpace = givenString.indexOf(' ')
-var firstNameextracted = givenString.substring(0,indexofFirstSpace)
+let indexofFirstSpace = givenString.indexOf(' ')
+let firstNameextracted = givenString.substring(0,indexofFirstSpace)
 console.log('Extracted First Name is: ', firstNameextracted)
 
 
@@ -86,8 +86,8 @@ console.log('Extracted First Name is: ', firstNameextracted)
 
 // Starting hint:
 //const endDate = new Date(2019, 3, 1);
-var startingdate = '1/1/2020 00:00:00'
-var endingdate = '4/1/2020 00:00:00'
+let startingdate = '1/1/2020 00:00:00'
+let endingdate = '4/1/2020 00:00:00'
 const startDate = new Date( startingdate)
 const endDate = new Date( endingdate)
 startdate_in_seconds = startDate.getTime()
